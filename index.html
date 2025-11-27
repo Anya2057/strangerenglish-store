@@ -751,6 +751,35 @@
         padding: 0.8rem;
       }
     }
+	/* === FIX: делаем картинки нормального размера === */
+
+/* Превью в карточках товара */
+.product-thumb {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.product-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Большая картинка в модальном окне */
+.modal-main-img {
+  max-height: 70vh;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.modal-main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
   </style>
 </head>
 
