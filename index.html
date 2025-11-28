@@ -1454,17 +1454,9 @@
     // ===== СЮДА МОЖНО ПОДСТАВИТЬ СВОЙ URL ДЛЯ ПОКУПКИ =====
     // Пример: открыть ссылку на форму оплаты, Telegram-бот или Wildberries.
     modalBuyBtn.addEventListener('click', () => {
-      if (!currentProductCard) return;
+  window.open('https://vk.com/id46203693', '_blank');
+});
 
-      const title = currentProductCard.getAttribute('data-title') || '';
-
-      // ВАРИАНТ 1: просто открыть какую-то одну ссылку для всех товаров
-      // window.open('https://your-payment-or-chat-link-here', '_blank');
-
-      // ВАРИАНТ 2: в зависимости от товара сделать разную ссылку
-      // (замените switch-case на свои ссылки)
-
-      let url = 'https://example.com'; // <-- замените на вашу базовую ссылку
 
       switch (title) {
         case 'CVC Reading Cards (a, e, i, o, u)':
